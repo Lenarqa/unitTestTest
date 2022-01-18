@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Output from "./Output";
 
 const Greeting = () => {
     const [isHello, setIsHello] = useState(true);
@@ -10,7 +11,7 @@ const Greeting = () => {
     return (
         <div>
             <h2>Hello World!</h2>
-            <p>{isHello ? 'Hello p!' : 'Goodbye p!'}</p>
+            <Output>{isHello ? 'Hello p!' : 'Goodbye p!'}</Output>
             <button onClick={changeTextHangler}>Change text</button>
         </div>
     );
